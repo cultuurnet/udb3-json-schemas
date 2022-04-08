@@ -7,4 +7,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Publish
-        run: cd projects/widgets && npx @stoplight/cli@5 push --ci-token ${{ secrets.CI_TOKEN_WIDGETS }}
+        run: npx @stoplight/cli@5 push -d projects/widgets -b ${GITHUB_REF##*/} --ci-token ${{ secrets.CI_TOKEN_WIDGETS }} --verbose
