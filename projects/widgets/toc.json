@@ -4,15 +4,6 @@
       "type": "item",
       "title": "Introduction",
       "uri": "docs/introduction.md"
-    },
-    {
-      "type": "divider",
-      "title": "API References"
-    },
-    {
-      "type": "item",
-      "title": "Example API",
-      "uri": "reference/example-api.json"
     }
   ]
 }
