@@ -7,7 +7,7 @@
     "remark-validate-links": "^10.0.4"
   },
   "scripts": {
-    "api:lint": "spectral lint ./reference/**/*.{json,yml,yaml} --fail-severity warn",
+    "api:lint": "spectral lint ./projects/**/reference/**/*.{json,yml,yaml} --fail-severity warn",
     "docs:lint": "remark ./projects/**/*.md --frail",
     "docs:lint:fix": "remark ./projects/**/*.md --frail -o"
   }
