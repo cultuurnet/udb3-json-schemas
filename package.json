@@ -8,7 +8,7 @@
   },
   "scripts": {
     "api:lint": "spectral lint ./reference/**/*.{json,yml,yaml} --fail-severity warn",
-    "docs:lint": "remark ./docs/ --frail",
-    "docs:lint:fix": "remark ./docs/ --frail -o"
+    "docs:lint": "remark ./projects/**/*.md --frail",
+    "docs:lint:fix": "remark ./projects/**/*.md --frail -o"
   }
 }
