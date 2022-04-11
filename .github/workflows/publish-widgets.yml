@@ -1,4 +1,4 @@
-name: Publish Widgets documentation
+name: Publish widgets documentation
 on: push
 jobs:
   publish:

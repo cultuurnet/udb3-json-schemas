@@ -1,4 +1,4 @@
-name: Publish Authentication documentation
+name: Publish authentication documentation
 on: push
 jobs:
   publish:
