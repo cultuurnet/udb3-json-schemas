@@ -11,5 +11,8 @@ jobs:
         id: branch-name
         uses: tj-actions/branch-names@v5.2
 
+      - name: Replace image URLs in introduction.md
+        run: sed -i -r 's_[./]+/assets/_https://raw.githubusercontent.com/cultuurnet/apidocs/${{ steps.branch-name.outputs.current_branch }}/projects/widgets/assets/_g' introduction.md
+
       - name: Publish
         run: npx @stoplight/cli@5 push -d projects/widgets -b ${{ steps.branch-name.outputs.current_branch }} --ci-token ${{ secrets.CI_TOKEN_WIDGETS }} --verbose
