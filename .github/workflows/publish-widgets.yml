@@ -12,7 +12,7 @@ jobs:
         uses: tj-actions/branch-names@v5.2
 
       - name: Replace image URLs in .md files
-        run: cd project/widgets/docs && find . -type f -name '*.md' -exec sed -i '' -r 's_\]\([./]+/assets/_](https://raw.githubusercontent.com/cultuurnet/apidocs/${{ steps.branch-name.outputs.current_branch }}/projects/widgets/assets/_g' {} +
+        run: cd projects/widgets/docs && find . -type f -name '*.md' -exec sed -i '' -r 's_\]\([./]+/assets/_](https://raw.githubusercontent.com/cultuurnet/apidocs/${{ steps.branch-name.outputs.current_branch }}/projects/widgets/assets/_g' {} +
 
       - name: Publish
         run: npx @stoplight/cli@5 push -d projects/widgets -b ${{ steps.branch-name.outputs.current_branch }} --ci-token ${{ secrets.CI_TOKEN_WIDGETS }} --verbose
