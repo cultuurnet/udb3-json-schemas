@@ -1,3 +1,5 @@
+<!-- focus: false -->
+
 ![](../assets/images/logo.png)
 
 ## Hello!
