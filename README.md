@@ -78,6 +78,17 @@ projects/
 
 It is important to adhere to this structure to avoid problems on the hosted version of our docs at https://docs.publiq.be or inside the Stoplight Studio editor.
 
+## Images
+
+All of your images **must** be stored inside the `assets/images` directory of your project. You may use subdirectories if you want.
+
+Additionally, you should always use relative URLs to reference them inside your Markdown files. For example, if your file is `docs/introduction.md`):
+```
+![Your example alt text](../assets/images/example.png)
+```
+
+If you do not follow these guidelines, images may not appear on https://docs.publiq.be even if they do in Stoplight Studio.
+
 ## Automatic checks
 
 To avoid common mistakes like dead links in how-to guides or violations of our [API design guidelines](https://docs.publiq.be/docs/guidelines) in OpenAPI files, automatic checks will run for every push or pull request.
