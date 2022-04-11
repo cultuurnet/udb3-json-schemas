@@ -4,7 +4,7 @@ This repository contains all the API documentation hosted at https://docs.publiq
 
 The hosting is provided by https://stoplight.io, who provide a beautiful UI for our docs.
 
-## Requirements
+## Requirements ✔️
 
 To contribute to our API documentation, some basic knowledge of [git](https://git-scm.com/) is required so you can commit your changes to a temporary branch and get them reviewed before they get published.
 
@@ -13,14 +13,14 @@ The following tools can also be helpful but are not strictly required:
 - [Stoplight Studio](https://stoplight.io/studio/), a GUI editor for API documentation built by https://stoplight.io (where our documentation is hosted). However, any file editor is fine technically.
 - [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/getting-started/install) to run the automatic checks on your own machine, and to run the automatic fixer in case of problems. (Any recent version should be fine.) However, the automatic checks will also run in GitHub itself for every push, and you can also run the automatic fixer manually on GitHub.
 
-## Getting started
+## Getting started 🚀
 
 Clone this repository to your local machine.
 ```
 git clone git@github.com:cultuurnet/apidocs.git
 ```
 
-## Contribution guidelines
+## Contribution guidelines ✨
 
 Anyone can contribute to our API documentation. To make the process as smooth as possible, please take the following guidelines into consideration:
 
@@ -34,7 +34,7 @@ When your changes are ready, create a regular pull request or [mark your draft p
 
 After the approval, the changes are usually expected to be merged by the pull request author (if they are in our organization). Pull requests from external forks will be merged by the reviewers.
 
-## Adding a new project
+## Adding a new project 🐣
 
 Adding a new project involves multiple steps both in this git repository, as on https://docs.publiq.be.
 
@@ -48,7 +48,7 @@ Because some of these steps require special permissions, it is not possible to d
 
 An admin will then add a new project for you.
 
-## Project structure
+## Project structure 🌿
 
 Every project has its own space inside the `projects` directory with the same name as their URL slug on https://docs.publiq.be. For example:
 
@@ -78,7 +78,7 @@ projects/
 
 It is important to adhere to this structure to avoid problems on the hosted version of our docs at https://docs.publiq.be or inside the Stoplight Studio editor.
 
-## Opening your project in Stoplight Studio
+## Opening your project in Stoplight Studio 🗂
 
 If you are just starting out with API documentation in this repository, it is advised to use the [Stoplight Studio](https://stoplight.io/studio/) editor to add files and make changes to existing files.
 
@@ -88,7 +88,7 @@ To open your project in Stoplight Studio, start the app and on the start screen 
 
 Then, to get an overview of all the files in your project, click on the "Files" tab in the left sidebar.
 
-## OpenAPI file(s)
+## OpenAPI file(s) ⚙️
 
 **Directory: `reference`**
 
@@ -100,7 +100,7 @@ Preferably the OpenAPI files are formatted as JSON, but YAML is also allowed if 
 
 You can add/edit OpenAPI files using your preferred JSON/YAML editor. [Stoplight Studio](https://stoplight.io/studio/) offers a nice GUI to work with OpenAPI files and also includes embedded reporting of the automatic checks that we run for OpenAPI files.
 
-## Docs
+## Docs 👩‍🏫
 
 **Directory: `docs`**
 
@@ -112,13 +112,13 @@ The reference for the Stoplight Flavored Markdown can be found [here](https://me
 
 Note that Markdown files should not be used to document all of your API's endpoints. They should only be used for how-to guides and other extra documentation, while your API's endpoints should be documented in an OpenAPI file.
 
-## Sidebar
+## Sidebar 🔎
 
 **File: `toc.json`**
 
 When you add or remove docs, your project's sidebar will not automatically be updated. Instead, you have to manage your project's sidebar manually inside its `toc.json` file. The exact syntax and options are described in [Stoplight's documentation](https://meta.stoplight.io/docs/platform/ZG9jOjIxOTkxNTkz-project-sidebar#project-sidebar).
 
-## Images
+## Images 🎨
 
 **Directory: `assets/images`**
 
@@ -131,7 +131,7 @@ Additionally, you should always use relative URLs to reference them inside your 
 
 If you do not follow these guidelines, images may not appear on https://docs.publiq.be even if they do in Stoplight Studio.
 
-## Automatic checks
+## Automatic checks 🚩
 
 To avoid common mistakes like dead links in how-to guides or violations of our [API design guidelines](https://docs.publiq.be/docs/guidelines) in OpenAPI files, automatic checks will run for every push or pull request.
 
@@ -146,7 +146,7 @@ Then, run any of the following commands:
 *   `yarn api:lint` to check for syntax errors or design guidelines violations inside the OpenAPI files
 *   `yarn docs:lint` to check the `.md` files (guides) for mistakes or syntax errors
 
-## Automatically fixing (some) errors
+## Automatically fixing (some) errors ✅
 
 Warnings or errors reported by `yarn api:lint` (a.k.a. the `CI / openapi` check on GitHub) always need to be fixed manually in the OpenAPI file(s) of your project.
 
