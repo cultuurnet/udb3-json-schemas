@@ -82,7 +82,7 @@ It is important to adhere to this structure to avoid problems on the hosted vers
 
 If you are just starting out with API documentation in this repository, it is advised to work with the [Stoplight Studio](https://stoplight.io/studio/) editor.
 
-When opening your project in Stoplight Studio, it is important to **open just your project** (for example `projects/widgets`)! If you instead open the whole repository, or the whole `projects` folder at once, Stoplight Studio will not correctly find your OpenAPI files, docs, images, and sidebar configuration file.
+When opening your project in Stoplight Studio, it is important to **open just your project**! If you instead open the whole repository, or the whole `projects` folder at once, Stoplight Studio will not correctly find your OpenAPI files, docs, images, and sidebar configuration file.
 
 To open your project in Stoplight Studio, start the app and on the start screen click "Open Existing Folder". Then pick the directory of your project in your local copy of this repository.
 
