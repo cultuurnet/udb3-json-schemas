@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "type": "item",
+      "title": "Introduction",
+      "uri": "docs/introduction.md"
+    },
+    {
+      "type": "item",
+      "title": "How we work",
+      "uri": "docs/how-we-work.md"
+    },
+    {
+      "type": "divider",
+      "title": "API design"
+    },
+    {
+      "type": "item",
+      "title": "REST architecture",
+      "uri": "docs/rest.md"
+    },
+    {
+      "type": "item",
+      "title": "Authentication",
+      "uri": "docs/authentication.md"
+    },
+    {
+      "type": "item",
+      "title": "Permissions",
+      "uri": "docs/permissions.md"
+    },
+    {
+      "type": "item",
+      "title": "Pagination",
+      "uri": "docs/pagination.md"
+    },
+    {
+      "type": "item",
+      "title": "Sorting",
+      "uri": "docs/sorting.md"
+    },
+    {
+      "type": "item",
+      "title": "Date & time info",
+      "uri": "docs/dates.md"
+    },
+    {
+      "type": "item",
+      "title": "Errors",
+      "uri": "docs/errors.md"
+    },
+    {
+      "type": "item",
+      "title": "CORS",
+      "uri": "docs/cors.md"
+    }
+  ]
+}

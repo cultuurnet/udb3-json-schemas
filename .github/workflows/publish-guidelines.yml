@@ -1,0 +1,13 @@
+name: Publish guidelines documentation
+on: push
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Publish
+        uses: ./.github/actions/stoplight-push
+        with:
+          name: guidelines
+          token: ${{ secrets.CI_TOKEN_GUIDELINES }}
