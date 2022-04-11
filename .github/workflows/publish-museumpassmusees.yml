@@ -1,4 +1,4 @@
-name: Publish museumPASSmusées
+name: Publish museumPASSmusées documentation
 on: push
 jobs:
   publish:
