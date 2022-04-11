@@ -78,9 +78,51 @@ projects/
 
 It is important to adhere to this structure to avoid problems on the hosted version of our docs at https://docs.publiq.be or inside the Stoplight Studio editor.
 
+## Opening your project in Stoplight Studio
+
+If you are just starting out with API documentation in this repository, it is advised to use the [Stoplight Studio](https://stoplight.io/studio/) editor to add files and make changes to existing files.
+
+When opening your project in Stoplight Studio, it is important to **open just your project** (for example `projects/widgets`)! If you instead open the whole repository, or the whole `projects` folder at once, Stoplight Studio will not correctly find your OpenAPI files, docs, images, and sidebar configuration file.
+
+To open your project in Stoplight Studio, start the app and on the start screen click "Open Existing Folder". Then pick the directory of your project in your local copy of this repository.
+
+Then, to get an overview of all the files in your project, click on the "Files" tab in the left sidebar.
+
+## OpenAPI file(s)
+
+**Directory: `reference`**
+
+The complete technical overview of your API's endpoints must be documented in an [OpenAPI](https://www.openapis.org/) file (previously called "Swagger"). If you have multiple APIs inside your project, your project may have multiple OpenAPI files.
+
+Every OpenAPI file must follow version 3.x of the OpenAPI spec, preferably [3.1.0](https://spec.openapis.org/oas/latest.html) or later when possible.
+
+Preferably the OpenAPI files are formatted as JSON, but YAML is also allowed if necessary.
+
+You can add/edit OpenAPI files using your preferred JSON/YAML editor. [Stoplight Studio](https://stoplight.io/studio/) offers a nice GUI to work with OpenAPI files and also includes embedded reporting of the automatic checks that we run for OpenAPI files.
+
+## Docs
+
+**Directory: `docs`**
+
+How-to guides and other pages all live inside the `docs` directory of your project.
+
+Every page is a Markdown (`.md`) file, which you can edit with a Markdown editor. However, Stoplight supports some special syntax that is not always supported in every Markdown Editor. Therefore it is advised to use [Stoplight Studio](https://stoplight.io/studio/) if possible.
+
+The reference for the Stoplight Flavored Markdown can be found [here](https://meta.stoplight.io/docs/studio/ZG9jOjg0-stoplight-flavored-markdown-smd). It allows you to, for example, easily embed videos from YouTube and Vimeo and to add info/warning/danger/success messages.
+
+Note that Markdown files should not be used to document all of your API's endpoints. They should only be used for how-to guides and other extra documentation, while your API's endpoints should be documented in an OpenAPI file.
+
+## Sidebar
+
+**File: `toc.json`**
+
+When you add or remove docs, your project's sidebar will not automatically be updated. Instead, you have to manage your project's sidebar manually inside its `toc.json` file. The exact syntax and options are described in [Stoplight's documentation](https://meta.stoplight.io/docs/platform/ZG9jOjIxOTkxNTkz-project-sidebar#project-sidebar).
+
 ## Images
 
-All of your images **must** be stored inside the `assets/images` directory of your project. You may use subdirectories if you want.
+**Directory: `assets/images`**
+
+To ensure that all of your images display correctly on https://docs.publiq.be, they must be stored inside the `assets/images` directory of your project. You may use subdirectories if you want.
 
 Additionally, you should always use relative URLs to reference them inside your Markdown files. For example, if your file is `docs/introduction.md`:
 ```
