@@ -10,8 +10,8 @@ To contribute to our API documentation, some basic knowledge of [git](https://gi
 
 The following tools can also be helpful but are not strictly required:
 
-- [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/getting-started/install) to run the automatic checks on your own machine, and to run the automatic fixer in case of problems. (Any recent version should be fine.) However, the automatic checks will also run in GitHub itself for every push.
 - [Stoplight Studio](https://stoplight.io/studio/), a GUI editor for API documentation built by https://stoplight.io (where our documentation is hosted). However, any file editor is fine technically.
+- [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/getting-started/install) to run the automatic checks on your own machine, and to run the automatic fixer in case of problems. (Any recent version should be fine.) However, the automatic checks will also run in GitHub itself for every push, and you can also run the automatic fixer manually on GitHub.
 
 ## Getting started
 
@@ -26,7 +26,7 @@ Anyone can contribute to our API documentation. To make the process as smooth as
 
 *   Use [atomic commits](https://curiousprogrammer.dev/blog/why-i-create-atomic-commits-in-git/).
 *   Use [good commit messages](https://cbea.ms/git-commit/). Avoid generic commit messages like `Updated example.md` or `PR remarks`.
-*   Avoid big pull requests with a lot of changes that are not related to each other. If you need to add a lot of documentation, aim for incremental pull requests with small, specific scopes.    
+*   Avoid big pull requests with a lot of changes that are not related to each other. If you need to add a lot of documentation, aim for incremental pull requests with small, specific scopes.
 *   Create a [draft pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) if your changes are not ready for review yet but you want to open a pull request already.
 *   Fill in the description of your pull request with the template that is automatically provided.
 
@@ -101,6 +101,17 @@ Second, run `yarn install` to install all required packages for the checks to wo
 
 Then, run any of the following commands:
 
+*   `yarn api:lint` to check for syntax errors or design guidelines violations inside the OpenAPI files
 *   `yarn docs:lint` to check the `.md` files (guides) for mistakes or syntax errors
-*   `yarn docs:lint:fix` to automatically fix issues reported by the previous command (when possible)
-*   `yarn api:lint` to check for syntax errors or design guidelines violations inside the OpenAPI files (always need to be fixed manually)
+
+## Automatically fixing (some) errors
+
+Warnings or errors reported by `yarn api:lint` (a.k.a. the `CI / openapi` check on GitHub) always need to be fixed manually in the OpenAPI file(s) of your project.
+
+Warnings or errors reported by `yarn docs:lint` (a.k.a. the `CI / docs` check on GitHub) can sometimes be fixed automatically, depending on the exact issue. For example formatting issues can be fixed automatically, but dead links not.
+
+If you have `node` and `yarn` installed locally, you can run `yarn docs:lint:fix` to try to fix the linting issues. Any issues that can be fixed will be fixed, and you can then commit them.
+
+You can also run the same script on GitHub itself via https://github.com/cultuurnet/apidocs/actions/workflows/docs-linting-fix.yml. 
+
+Click "Run workflow", select the branch you are working on (make sure it's up-to-date!), and hit the green "Run workflow" button. If any errors were fixed, they will be automatically committed back to your branch. Make sure to pull these changes in your local copy of the docs before making more changes to avoid merge conflicts!
