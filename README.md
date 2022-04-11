@@ -157,3 +157,5 @@ If you have `node` and `yarn` installed locally, you can run `yarn docs:lint:fix
 You can also run the same script on GitHub itself via https://github.com/cultuurnet/apidocs/actions/workflows/docs-linting-fix.yml. 
 
 Click "Run workflow", select the branch you are working on (make sure it's up-to-date!), and hit the green "Run workflow" button. If any errors were fixed, they will be automatically committed back to your branch. Make sure to pull these changes in your local copy of the docs before making more changes to avoid merge conflicts!
+
+![](readme-images/run-workflow.png)
