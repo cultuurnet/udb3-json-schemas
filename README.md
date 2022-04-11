@@ -82,7 +82,7 @@ It is important to adhere to this structure to avoid problems on the hosted vers
 
 All of your images **must** be stored inside the `assets/images` directory of your project. You may use subdirectories if you want.
 
-Additionally, you should always use relative URLs to reference them inside your Markdown files. For example, if your file is `docs/introduction.md`):
+Additionally, you should always use relative URLs to reference them inside your Markdown files. For example, if your file is `docs/introduction.md`:
 ```
 ![Your example alt text](../assets/images/example.png)
 ```
