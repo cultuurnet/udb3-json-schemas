@@ -106,7 +106,7 @@ You can add/edit OpenAPI files using your preferred JSON/YAML editor. [Stoplight
 
 How-to guides and other pages all live inside the `docs` directory of your project.
 
-Every page is a Markdown (`.md`) file, which you can edit with a Markdown editor. However, Stoplight supports some special syntax that is not always supported in every Markdown Editor. Therefore it is advised to use [Stoplight Studio](https://stoplight.io/studio/) if possible.
+Every page is a Markdown (`.md`) file, which you can edit with a Markdown editor. However, Stoplight supports some special syntax that is not always supported in every Markdown editor. Therefore it is advised to use [Stoplight Studio](https://stoplight.io/studio/) if possible.
 
 The reference for the Stoplight Flavored Markdown can be found [here](https://meta.stoplight.io/docs/studio/ZG9jOjg0-stoplight-flavored-markdown-smd). It allows you to, for example, easily embed videos from YouTube and Vimeo and to add info/warning/danger/success messages.
 
