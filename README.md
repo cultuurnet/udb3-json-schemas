@@ -24,6 +24,8 @@ git clone git@github.com:cultuurnet/apidocs.git
 
 Anyone can contribute to our API documentation. To make the process as smooth as possible, please take the following guidelines into consideration:
 
+*   Make your changes on a branch separate from `main` first. (Pushes to `main` will automatically be rejected!) Use a branch name that is prefixed with your project's name. For example `uitdatabank/your-branch-name` or `widgets/your-branch-name`.
+*   Try to only make changes to one project per branch / PR, unless absolutely necessary to edit multiple projects at once.
 *   Use [atomic commits](https://curiousprogrammer.dev/blog/why-i-create-atomic-commits-in-git/).
 *   Use [good commit messages](https://cbea.ms/git-commit/). Avoid generic commit messages like `Updated example.md` or `PR remarks`.
 *   Avoid big pull requests with a lot of changes that are not related to each other. If you need to add a lot of documentation, aim for incremental pull requests with small, specific scopes.
