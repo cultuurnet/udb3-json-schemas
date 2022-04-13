@@ -193,11 +193,12 @@ Warnings or errors reported by `yarn docs:lint` (a.k.a. the `CI / docs` check on
 
 If you have `node` and `yarn` installed locally and ran `yarn install` to install all required packages, you can run `yarn docs:lint:fix` to try to fix the linting issues. Any issues that can be fixed will be fixed, and you can then commit them.
 
-You can also run the same script [on GitHub itself](https://github.com/cultuurnet/apidocs/actions/workflows/docs-linting-fix.yml).
-
-Click "Run workflow", select the branch you are working on (make sure it's up-to-date!), and hit the green "Run workflow" button. If any errors were fixed, they will be automatically committed back to your branch. Make sure to pull these changes in your local copy of the docs before making more changes to avoid merge conflicts!
+You can also run the same script on GitHub itself.
+Navigate to the ["Fix docs linting errors"](https://github.com/cultuurnet/apidocs/actions/workflows/docs-linting-fix.yml) Action, click "Run workflow", select the branch you are working on (make sure it's up-to-date!), and hit the green "Run workflow" button.
 
 ![](readme-images/run-workflow.png)
+
+If any errors were fixed, they will be automatically committed back to your branch. Make sure to pull these changes in your local copy of the docs before making more changes to avoid merge conflicts!
 
 ## Useful tools and resources 📚
 
