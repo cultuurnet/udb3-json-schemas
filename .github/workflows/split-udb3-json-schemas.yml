@@ -14,7 +14,7 @@ jobs:
       - name: Split
         uses: antalaron/action-splitsh@master
         with:
-          split: 'cultuurnet/udb3-json-schemas'
-          split_branch: ${{ steps.branch-name.outputs.current_branch }}
-          split_deploy_key: ${{ secrets.DEPLOY_KEY_UDB3_JSON_SCHEMAS }}
+          subtree: 'cultuurnet/udb3-json-schemas'
+          subtree_deploy_key: ${{ secrets.DEPLOY_KEY_UDB3_JSON_SCHEMAS }}
           split_prefix: 'projects/uitdatabank/models'
+          split_branch: ${{ steps.branch-name.outputs.current_branch }}
