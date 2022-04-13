@@ -109,7 +109,7 @@ Every OpenAPI file must follow version 3.x of the OpenAPI spec, preferably [3.1.
 
 Preferably the OpenAPI files are formatted as JSON, but YAML is also allowed if necessary.
 
-[Stoplight Studio](https://stoplight.io/studio/) offers a nice GUI to work with OpenAPI files, a preview of how your OpenAPI docs will look on https://docs.publiq.be, and also includes a live report of the automatic checks that we run for OpenAPI files. But you can also add or edit OpenAPI files using any other JSON/YAML editor that you prefer.
+[Stoplight Studio](https://stoplight.io/studio/) offers an easy-to-use interface to edit and preview OpenAPI files, and also includes a live report of the automatic checks that we run for OpenAPI files. But you can also add or edit OpenAPI files using any other JSON/YAML editor that you prefer.
 
 ## Docs 👩‍🏫
 
