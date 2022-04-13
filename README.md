@@ -1,8 +1,6 @@
 # cultuurnet/apidocs
 
-This repository contains all the API documentation hosted at https://docs.publiq.be.
-
-The hosting is provided by https://stoplight.io, who provide a beautiful interface to browse them.
+This repository contains all the API documentation available at https://docs.publiq.be, hosted by [Stoplight.io](https://stoplight.io) who provide a beautiful interface to browse them.
 
 ## Table of contents
 
