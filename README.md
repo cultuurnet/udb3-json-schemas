@@ -14,6 +14,7 @@ This repository contains all the API documentation available at https://docs.pub
 - [Docs](#docs-)
 - [Sidebar](#sidebar-)
 - [Images](#images-)
+- [Links](#links-)  
 - [Automatic checks](#automatic-checks-)
 - [Automatically fixing (some) errors](#automatically-fixing-some-errors-)
 - [Useful tools and resource](#useful-tools-and-resources-)
@@ -143,6 +144,23 @@ For example, if your file is `docs/introduction.md`:
 ```
 
 If you do not follow these guidelines images may not appear on https://docs.publiq.be even if they display in Stoplight Studio's preview.
+
+## Links ⚓️
+
+✅ Always use relative URLs as much as possible when linking to Markdown files or OpenAPI operations inside the same project.
+
+⚠️ Avoid absolute URLs (for example `https://docs.publiq.be/docs/project/file.md`) when linking to docs or OpenAPI operations inside the same project. 
+They will always point to a specific branch (or the default one), and you either won't be able to link to new docs or OpenAPI operations added in your new branch (because they won't exist yet on the default branch), or you will need to link to them with a URL with your branch name and that URL will break once your branch gets merged and deleted.
+
+👉 When linking **to a Markdown file** from **another Markdown file**, use `[Your link text](./your-file.md)`.
+
+👉 When linking **to a Markdown file** from **an OpenAPI file**, use `[Your link text](../docs/your-file.md)`.
+
+👉 When linking **to an OpenAPI operation** from **a Markdown file**, use `[Your link text](../reference/api.json/paths/~1your~1path~1here/get)`. Slashes in the API path are encoded as `~1`. (This example will link to the `GET /your/path/here` operation inside `api.json`.)
+
+👉 When linking **to an OpenAPI operation** from **an OpenAPI file**, use `[Your link text](./api.json/paths/~1your~1path~1here/get)`. (This example will link to the `GET /your/path/here` operation inside `api.json`.)
+
+️👉 When linking **to Markdown files or OpenAPI operations** in **other projects**, only absolute URLs can be used.
 
 ## Automatic checks 🔁
 
