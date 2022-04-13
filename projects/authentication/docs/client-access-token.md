@@ -126,4 +126,5 @@ Make sure to set replace `YOUR_CLIENT_ID` and `YOUR_CLIENT_SECRET` with your own
 ```
 
 <!-- theme: warning -->
+
 > If you get a "network error" using the form above, most likely your client id is not correct. Please double check that you are using your client id for the test environment. Alternatively copy the request sample as a curl request from the form above and check the response from the authorization server by sending the request from a command-line interface or another tool.
