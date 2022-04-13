@@ -4,7 +4,7 @@ This repository contains all the API documentation hosted at https://docs.publiq
 
 The hosting is provided by https://stoplight.io, who provide a beautiful UI for our docs.
 
-## Requirements ✔️
+## Requirements 🐙
 
 To contribute to our API documentation, some basic knowledge of [git](https://git-scm.com/) is required so you can commit your changes to a temporary branch and get them reviewed before they get published.
 
@@ -80,7 +80,7 @@ projects/
 
 It is important to adhere to this structure to avoid problems on the hosted version of our docs at https://docs.publiq.be or inside the Stoplight Studio editor.
 
-## Opening your project in Stoplight Studio 🗂
+## Opening your project in Stoplight Studio 🤖
 
 If you are just starting out with API documentation in this repository, it is advised to work with the [Stoplight Studio](https://stoplight.io/studio/) editor.
 
@@ -90,7 +90,7 @@ To open your project in Stoplight Studio, start the app and on the start screen 
 
 Then, to get an overview of all the files in your project, click on the "Files" tab in the left sidebar.
 
-## OpenAPI file(s) ⚙️
+## OpenAPI file(s) 🔌
 
 **Directory: `reference`**
 
@@ -133,7 +133,7 @@ Additionally, you should always use relative URLs to reference them inside your 
 
 If you do not follow these guidelines, images may not appear on https://docs.publiq.be even if they do in Stoplight Studio.
 
-## Automatic checks 🚩
+## Automatic checks 🔁
 
 To avoid common mistakes like dead links in how-to guides or violations of our [API design guidelines](https://docs.publiq.be/docs/guidelines) in OpenAPI files, automatic checks will run for every push or pull request.
 
