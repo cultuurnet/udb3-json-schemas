@@ -92,6 +92,7 @@ If you are just starting out with API documentation in this repository, it is ad
 
 When opening your project in Stoplight Studio, it is important to **open a single project**.
 If you instead open the whole repository, or the whole `projects` folder at once, Stoplight Studio will not correctly find your OpenAPI files, docs, images, and sidebar configuration file!
+
 Start the app and on the start screen click "Open Existing Folder". Then pick the directory of your project in your local copy of this repository.
 
 Stoplight Studio offers 3 tabs in its sidebar to browse your files: `APIs`, `Docs`, and `Files`. While you can use whichever one you prefer, the `Files` tab give the most complete view of all the files in your project (including all the files from `APIs` and `Docs`).
