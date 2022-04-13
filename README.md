@@ -136,13 +136,13 @@ When you add or remove OpenAPI or Markdown files, your project's sidebar will no
 To ensure that all of your images display correctly on https://docs.publiq.be they must be stored inside the `assets/images` directory of your project. 
 You may use subdirectories if you want.
 
-Additionally, you should always use relative URLs to reference them inside your Markdown files. 
+When referencing images inside your Markdown files, you should always use relative URLs. 
 For example, if your file is `docs/introduction.md`:
 ```
 ![Your example alt text](../assets/images/example.png)
 ```
 
-If you do not follow these guidelines images may not appear on https://docs.publiq.be even if they do in Stoplight Studio.
+If you do not follow these guidelines images may not appear on https://docs.publiq.be even if they display in Stoplight Studio's preview.
 
 ## Automatic checks 🔁
 
