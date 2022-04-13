@@ -72,7 +72,7 @@ Read more:
 
 Always use specific errors like `406` https://api.publiq.be/probs/header/not-acceptable or `415` https://api.publiq.be/probs/header/unsupported-media-type for standardized headers like `Accept` and `Content-Type`.
 
-If a standardized error code exists but is not documented as an error type yet, open an issue or create a pull request in [the github repository for the error documentation](https://github.com/cultuurnet/stoplight-docs-errors/) to get it added.
+If a standardized error code exists but is not documented as an error type yet, open an issue or create a pull request in [our apidocs github repository](https://github.com/cultuurnet/apidocs/blob/main/projects/errors/docs/type-header.md) to get it added.
 
 Only use generic errors like `400` https://api.publiq.be/probs/header/missing and `400` https://api.publiq.be/probs/header/invalid if there are no more specific types available and an existing standardized error code cannot be added.
 
