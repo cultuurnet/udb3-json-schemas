@@ -14,7 +14,7 @@ This repository contains all the API documentation available at https://docs.pub
 - [Docs](#docs-)
 - [Sidebar](#sidebar-)
 - [Images](#images-)
-- [Links](#links-)
+- [Links](#links-%EF%B8%8F)
 - [Automatic checks](#automatic-checks-)
 - [Automatically fixing (some) errors](#automatically-fixing-some-errors-)
 - [Useful tools and resource](#useful-tools-and-resources-)
