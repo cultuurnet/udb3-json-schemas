@@ -117,7 +117,7 @@ Preferably the OpenAPI files are formatted as JSON, but YAML is also allowed if 
 
 How-to guides and other pages outside of the OpenAPI files all live inside the `docs` directory of your project.
 
-Every page is a Markdown (`.md`) file, which you can edit with a Markdown editor. However, Stoplight supports some [special syntax](https://meta.stoplight.io/docs/studio/ZG9jOjg0-stoplight-flavored-markdown-smd), that allows you to for example embed YouTube and Vimeo videos or to add info/warning/danger/success messages. 
+Every page is a Markdown (`.md`) file, which you can edit with a Markdown editor. However, Stoplight supports some [special syntax](https://meta.stoplight.io/docs/studio/ZG9jOjg0-stoplight-flavored-markdown-smd) that allows you to for example embed YouTube and Vimeo videos or to add info/warning/danger/success messages. 
 This "Stoplight Flavored Markdown" syntax is usually not supported in every Markdown editor. 
 Therefore it is advised to use [Stoplight Studio](https://stoplight.io/studio/) to edit the Markdown files, especially if you want to see a nice preview of how your pages will look on https://docs.publiq.be.
 
