@@ -44,6 +44,6 @@ assignees: bertramakers
 
 ---
 
-## Other info
+### Other info
 
 [Feel free to provide any other information that you think could be useful, or remove this section.]
