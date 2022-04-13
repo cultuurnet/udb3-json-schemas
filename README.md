@@ -180,6 +180,14 @@ Then, run any of the following commands in the root of the cloned repository:
 *   `yarn api:lint` to check for syntax errors or design guidelines violations inside the OpenAPI files
 *   `yarn docs:lint` to check the `.md` files (guides) for mistakes or syntax errors
 
+If you want to automatically run these checks on your local machine for every new commit, you can execute the following command in the root of your cloned repository (once) to install a [`pre-commit` hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks):
+
+```
+cp pre-commit .git/hooks/pre-commit
+```
+
+In any case the checks will also run on GitHub and you should receive an email if they fail, and if you open a pull request it will also include the status of the checks. 
+
 ## Automatically fixing (some) errors ✅
 
 Warnings or errors reported by `yarn api:lint` (a.k.a. the `CI / openapi` check on GitHub) always need to be fixed manually in the OpenAPI file(s) of your project.
