@@ -2,7 +2,7 @@
   "title": "event.post (deprecated)",
   "type": "object",
   "properties": {
-    "mainlanguage": {
+    "mainLanguage": {
       "$ref": "./event-mainLanguage.json"
     },
     "name": {
@@ -29,7 +29,7 @@
     }
   },
   "required": [
-    "mainlanguage",
+    "mainLanguage",
     "name",
     "type",
     "location",
