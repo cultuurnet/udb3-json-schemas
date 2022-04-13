@@ -1,5 +1,0 @@
-{
-  "$ref": "./common-coordinates.json",
-  "title": "place.geo",
-  "description": "Geographic coordinates corresponding to the [address](./place-address.json) the place is located at. Calculated automatically by UiTdatabank."
-}
