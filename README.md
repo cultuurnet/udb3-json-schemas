@@ -56,15 +56,9 @@ If a reviewer has approved but there are still open comments (from the same revi
 
 Adding a new project involves multiple steps both in this git repository and on https://docs.publiq.be.
 
-Because some of these steps require special permissions, it is not possible to do this yourself. Instead, [create an issue](https://github.com/cultuurnet/apidocs/issues) with the following information:
+Because some of these steps require special permissions, it is not possible to do this yourself. Instead, [create an issue with the "New project" template](https://github.com/cultuurnet/apidocs/issues/new?assignees=bertramakers&labels=project&template=new-project.md&title=New+project%3A+YOUR+PROJECT+NAME+HERE) and fill out all required info.
 
-*   **Human-readable name of your project.** This is the name that will appear in the menu on https://docs.publiq.be. For example `UiTdatabank`.
-*   **A short tagline.** This will appear under the name of your project in the menu and must be under 35 characters to avoid an ellipsis. For example `Integrate with the UiTdatabank APIs`.
-*   **A URL slug** for your project on https://docs.publiq.be. This will also be the name of your project's directory inside this repository. Avoid abbreviations, use lowercase characters, and `-` for spaces if needed. For example `uitdatabank`.
-*   **A [fontawesome icon](https://fontawesome.com/icons) name** which will be displayed next to your project in the menu. For example `calendar-alt`.
-*   **A hex color code** that will determine the color of your project's icon in the menu. For example `#EF1810`.
-
-An admin will then add a new project for you.
+An admin will then automatically be assigned to add the new project for you.
 
 ## Project structure 🌿
 
