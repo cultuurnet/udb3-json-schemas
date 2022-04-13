@@ -46,9 +46,11 @@ Anyone can contribute to our API documentation. To make the process as smooth as
 *   Create a [draft pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) if your changes are not ready for review yet but you want to open a pull request already.
 *   Fill in the description of your pull request with the template that is automatically provided.
 
-When your changes are ready, create a regular pull request or [mark your draft pull request as ready for review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request#marking-a-pull-request-as-ready-for-review). One or more reviewers will automatically be assigned to go over your changes and give feedback or approve them.
+When your changes are ready create a pull request if you haven't done so yet, or [mark your draft pull request as ready for review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request#marking-a-pull-request-as-ready-for-review). One or more reviewers will automatically be assigned to go over your changes and give feedback or their approval.
 
 After approval, it is up to the pull request author to merge the changes (if the author is part of our organization). Pull requests from external forks will be merged by the reviewers.
+
+If a reviewer has approved but there are still open comments (from the same reviewer or another one), please be considerate and resolve those first before merging.
 
 ## Adding a new project 🐣
 
