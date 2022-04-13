@@ -178,6 +178,10 @@ If you want to automatically run these checks on your local machine for every ne
 
     cp pre-commit .git/hooks/pre-commit
 
+You can uninstall the pre-commit hook by running:
+
+    rm .git/hooks/pre-commit
+
 In any case the checks will also run on GitHub and you should receive an email if they fail. 
 If you open a pull request it will also include the status of the checks.
 
