@@ -1,0 +1,1 @@
+yarn install && yarn api:lint && yarn docs:lint
