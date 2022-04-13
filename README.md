@@ -121,7 +121,7 @@ Every page is a Markdown (`.md`) file, which you can edit with a Markdown editor
 This "Stoplight Flavored Markdown" syntax is usually not supported in every Markdown editor. 
 Therefore it is advised to use [Stoplight Studio](https://stoplight.io/studio/) to edit the Markdown files, especially if you want to see a nice preview of how your pages will look on https://docs.publiq.be.
 
-Note that Markdown files should not be used to document a reference of all of your API's endpoints. They should only be used for how-to guides and other extra information that cannot be documented in your OpenAPI file(s).
+Note that Markdown files should not be used to create a complete reference of all of your API's endpoints. They should only be used for how-to guides and other extra information that cannot be documented in your OpenAPI file(s).
 
 ## Sidebar 🔎
 
