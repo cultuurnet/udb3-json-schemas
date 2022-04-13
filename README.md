@@ -4,20 +4,20 @@ This repository contains all the API documentation available at https://docs.pub
 
 ## Table of contents
 
-- [Requirements](#requirements-)
-- [Getting started](#getting-started-)
-- [Contribution guidelines](#contribution-guidelines-)
-- [Adding a new project](#adding-a-new-project-)
-- [Project structure](#project-structure-)
-- [Opening your project in Stoplight Studio](#opening-your-project-in-stoplight-studio-)
-- [OpenAPI files](#openapi-files-)
-- [Docs](#docs-)
-- [Sidebar](#sidebar-)
-- [Images](#images-)
-- [Links](#links-%EF%B8%8F)
-- [Automatic checks](#automatic-checks-)
-- [Automatically fixing (some) errors](#automatically-fixing-some-errors-)
-- [Useful tools and resource](#useful-tools-and-resources-)
+*   [Requirements](#requirements-)
+*   [Getting started](#getting-started-)
+*   [Contribution guidelines](#contribution-guidelines-)
+*   [Adding a new project](#adding-a-new-project-)
+*   [Project structure](#project-structure-)
+*   [Opening your project in Stoplight Studio](#opening-your-project-in-stoplight-studio-)
+*   [OpenAPI files](#openapi-files-)
+*   [Docs](#docs-)
+*   [Sidebar](#sidebar-)
+*   [Images](#images-)
+*   [Links](#links-)
+*   [Automatic checks](#automatic-checks-)
+*   [Automatically fixing (some) errors](#automatically-fixing-some-errors-)
+*   [Useful tools and resource](#useful-tools-and-resources-)
 
 ## Requirements 🐙
 
@@ -25,15 +25,14 @@ To contribute to our API documentation, some basic knowledge of [git](https://gi
 
 The following tools can also be helpful but are not strictly required:
 
-- [Stoplight Studio](https://stoplight.io/studio/), a GUI editor for API documentation built by https://stoplight.io (where our documentation is hosted). However technically any file editor is fine.
-- [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/getting-started/install) to run the [automatic checks](#automatic-checks-) on your own machine, and to run the [automatic fixer](#automatically-fixing-some-errors-) in case of problems. (Any recent version should be fine.) However, the automatic checks will also run in GitHub itself for every push, and you can also [run the automatic fixer online via GitHub Actions](https://github.com/cultuurnet/apidocs/actions/workflows/docs-linting-fix.yml).
+*   [Stoplight Studio](https://stoplight.io/studio/), a GUI editor for API documentation built by https://stoplight.io (where our documentation is hosted). However technically any file editor is fine.
+*   [Node](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/getting-started/install) to run the [automatic checks](#automatic-checks-) on your own machine, and to run the [automatic fixer](#automatically-fixing-some-errors-) in case of problems. (Any recent version should be fine.) However, the automatic checks will also run in GitHub itself for every push, and you can also [run the automatic fixer online via GitHub Actions](https://github.com/cultuurnet/apidocs/actions/workflows/docs-linting-fix.yml).
 
 ## Getting started 🚀
 
 Clone this repository to your local machine.
-```
-git clone git@github.com:cultuurnet/apidocs.git
-```
+
+    git clone git@github.com:cultuurnet/apidocs.git
 
 ## Contribution guidelines ✨
 
@@ -57,7 +56,7 @@ If a reviewer has approved but there are still open comments (from the same revi
 
 Adding a new project involves multiple steps both in this git repository and on https://docs.publiq.be.
 
-Because some of these steps require special permissions, it is not possible to do this yourself. Instead, [create an issue with the "New project" template](https://github.com/cultuurnet/apidocs/issues/new?assignees=bertramakers&labels=project&template=new-project.md&title=New+project%3A+YOUR+PROJECT+NAME+HERE) and fill out all required info.
+Because some of these steps require special permissions, it is not possible to do this yourself. Instead, [create an issue with the "New project" template](https://github.com/cultuurnet/apidocs/issues/new?assignees=bertramakers\&labels=project\&template=new-project.md\&title=New+project%3A+YOUR+PROJECT+NAME+HERE) and fill out all required info.
 
 An admin will then automatically be assigned to add the new project for you.
 
@@ -65,29 +64,25 @@ An admin will then automatically be assigned to add the new project for you.
 
 Every project has its own space inside the `projects` directory with the same name as their URL slug on https://docs.publiq.be. For example:
 
-```
-projects/
-├─ authentication/  # https://docs.publiq.be/docs/authentication
-├─ errors/          # https://docs.publiq.be/docs/errors
-├─ guidelines/      # https://docs.publiq.be/docs/guidelines
-├─ uitdatabank/     # https://docs.publiq.be/docs/uitdatabank
-├─ uitpas/          # https://docs.publiq.be/docs/uitpas
-├─ widgets/         # https://docs.publiq.be/docs/widgets
-├─ ...
-```
+    projects/
+    ├─ authentication/  # https://docs.publiq.be/docs/authentication
+    ├─ errors/          # https://docs.publiq.be/docs/errors
+    ├─ guidelines/      # https://docs.publiq.be/docs/guidelines
+    ├─ uitdatabank/     # https://docs.publiq.be/docs/uitdatabank
+    ├─ uitpas/          # https://docs.publiq.be/docs/uitpas
+    ├─ widgets/         # https://docs.publiq.be/docs/widgets
+    ├─ ...
 
 Our documentation is hosted by [Stoplight](https://stoplight.io), which expects a specific directory structure:
 
-```
-projects/
-├─ authentication/
-│  ├─ assets/         # Contains all your static files
-│  │  ├─ images/      # Contains all your images
-│  ├─ docs/           # Contains all your .md files for guides
-│  ├─ reference/      # Contains all your OpenAPI files (preferably .json)
-│  ├─ toc.json        # Contains the config of your project's sidebar
-├─ ...
-```
+    projects/
+    ├─ authentication/
+    │  ├─ assets/         # Contains all your static files
+    │  │  ├─ images/      # Contains all your images
+    │  ├─ docs/           # Contains all your .md files for guides
+    │  ├─ reference/      # Contains all your OpenAPI files (preferably .json)
+    │  ├─ toc.json        # Contains the config of your project's sidebar
+    ├─ ...
 
 It is important to adhere to this structure to avoid problems on the hosted version of our docs at https://docs.publiq.be or inside the Stoplight Studio editor.
 
@@ -95,7 +90,7 @@ It is important to adhere to this structure to avoid problems on the hosted vers
 
 If you are just starting out with API documentation in this repository, it is advised to work with the [Stoplight Studio](https://stoplight.io/studio/) editor because it gives you a preview of how your documentation will look when published on https://docs.publiq.be.
 
-When opening your project in Stoplight Studio, it is important to **open a single project**. 
+When opening your project in Stoplight Studio, it is important to **open a single project**.
 If you instead open the whole repository, or the whole `projects` folder at once, Stoplight Studio will not correctly find your OpenAPI files, docs, images, and sidebar configuration file!
 Start the app and on the start screen click "Open Existing Folder". Then pick the directory of your project in your local copy of this repository.
 
@@ -119,8 +114,8 @@ Preferably the OpenAPI files are formatted as JSON, but YAML is also allowed if 
 
 How-to guides and other pages outside of the OpenAPI files all live inside the `docs` directory of your project.
 
-Every page is a Markdown (`.md`) file, which you can edit with a Markdown editor. However, Stoplight supports some [special syntax](https://meta.stoplight.io/docs/studio/ZG9jOjg0-stoplight-flavored-markdown-smd) that allows you to for example embed YouTube and Vimeo videos or to add info/warning/danger/success messages. 
-This "Stoplight Flavored Markdown" syntax is usually not supported in every Markdown editor. 
+Every page is a Markdown (`.md`) file, which you can edit with a Markdown editor. However, Stoplight supports some [special syntax](https://meta.stoplight.io/docs/studio/ZG9jOjg0-stoplight-flavored-markdown-smd) that allows you to for example embed YouTube and Vimeo videos or to add info/warning/danger/success messages.
+This "Stoplight Flavored Markdown" syntax is usually not supported in every Markdown editor.
 Therefore it is advised to use [Stoplight Studio](https://stoplight.io/studio/) to edit the Markdown files, especially if you want to see a nice preview of how your pages will look on https://docs.publiq.be.
 
 Note that Markdown files should not be used to create a complete reference of all of your API's endpoints. They should only be used for how-to guides and other extra information that cannot be documented in your OpenAPI file(s).
@@ -135,22 +130,21 @@ When you add or remove OpenAPI or Markdown files, your project's sidebar will no
 
 **Directory: `assets/images`**
 
-To ensure that all of your images display correctly on https://docs.publiq.be they must be stored inside the `assets/images` directory of your project. 
+To ensure that all of your images display correctly on https://docs.publiq.be they must be stored inside the `assets/images` directory of your project.
 You may use subdirectories if you want.
 
-When referencing images inside your Markdown files, you should always use relative URLs. 
+When referencing images inside your Markdown files, you should always use relative URLs.
 For example, if your file is `docs/introduction.md`:
-```
-![Your example alt text](../assets/images/example.png)
-```
+
+    ![Your example alt text](../assets/images/example.png)
 
 If you do not follow these guidelines images may not appear on https://docs.publiq.be even if they display in Stoplight Studio's preview.
 
-## Links ⚓️
+## Links 🌐
 
 ✅ Always use relative URLs as much as possible when linking to Markdown files or OpenAPI operations inside the same project.
 
-⚠️ Avoid absolute URLs (for example `https://docs.publiq.be/docs/project/file.md`) when linking to docs or OpenAPI operations inside the same project. 
+⚠️ Avoid absolute URLs (for example `https://docs.publiq.be/docs/project/file.md`) when linking to docs or OpenAPI operations inside the same project.
 They will always point to a specific branch (or the default one), and you either won't be able to link to new docs or OpenAPI operations added in your new branch (because they won't exist yet on the default branch), or you will need to link to them with a URL with your branch name and that URL will break once your branch gets merged and deleted.
 
 👉 When linking **to a Markdown file** from **another Markdown file**, use `[Your link text](./your-file.md)`.
@@ -182,11 +176,9 @@ Then, run any of the following commands in the root of the cloned repository:
 
 If you want to automatically run these checks on your local machine for every new commit, you can execute the following command in the root of your cloned repository (once) to install a [`pre-commit` hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks):
 
-```
-cp pre-commit .git/hooks/pre-commit
-```
+    cp pre-commit .git/hooks/pre-commit
 
-In any case the checks will also run on GitHub and you should receive an email if they fail, and if you open a pull request it will also include the status of the checks. 
+In any case the checks will also run on GitHub and you should receive an email if they fail, and if you open a pull request it will also include the status of the checks.
 
 ## Automatically fixing (some) errors ✅
 
@@ -196,13 +188,13 @@ Warnings or errors reported by `yarn docs:lint` (a.k.a. the `CI / docs` check on
 
 If you have `node` and `yarn` installed locally and ran `yarn install` to install all required packages, you can run `yarn docs:lint:fix` to try to fix the linting issues. Any issues that can be fixed will be fixed, and you can then commit them.
 
-You can also run the same script on GitHub itself via https://github.com/cultuurnet/apidocs/actions/workflows/docs-linting-fix.yml. 
+You can also run the same script on GitHub itself via https://github.com/cultuurnet/apidocs/actions/workflows/docs-linting-fix.yml.
 
 Click "Run workflow", select the branch you are working on (make sure it's up-to-date!), and hit the green "Run workflow" button. If any errors were fixed, they will be automatically committed back to your branch. Make sure to pull these changes in your local copy of the docs before making more changes to avoid merge conflicts!
 
 ![](readme-images/run-workflow.png)
 
-## Useful tools and resources 🌐
+## Useful tools and resources 📚
 
 While not required, you can use the following links to help you write excellent documentation:
 
