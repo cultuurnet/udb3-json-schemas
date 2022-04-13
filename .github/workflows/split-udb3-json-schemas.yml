@@ -1,20 +1,28 @@
 name: Split UDB3 JSON schemas
 on: push
+env:
+  GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN_UDB3_JSON_SCHEMAS }}
 jobs:
-  release:
+  split:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      -   uses: actions/checkout@v2
+      # no tag
+      - if: "!startsWith(github.ref, 'refs/tags/')"
+        uses: "symplify/monorepo-split-github-action@2.1"
         with:
-          fetch-depth: 0
-      - name: Get branch name
-        id: branch-name
-        uses: tj-actions/branch-names@v5.2
-      - name: Split
-        uses: antalaron/action-splitsh@master
+          package_directory: 'projects/uitdatabank/models'
+          repository_organization: 'cultuurnet'
+          repository_name: 'udb3-json-schemas'
+          user_name: "dev-publiq"
+          user_email: "dev@publiq.be"
+      # with tag
+      - if: "startsWith(github.ref, 'refs/tags/')"
+        uses: "symplify/monorepo-split-github-action@2.1"
         with:
-          subtree: 'cultuurnet/udb3-json-schemas'
-          subtree_deploy_key: ${{ secrets.DEPLOY_KEY_UDB3_JSON_SCHEMAS }}
-          split_prefix: 'projects/uitdatabank/models'
-          split_branch: ${{ steps.branch-name.outputs.current_branch }}
+          tag: ${GITHUB_REF#refs/tags/}
+          package_directory: 'projects/uitdatabank/models'
+          repository_organization: 'cultuurnet'
+          repository_name: 'udb3-json-schemas'
+          user_name: "dev-publiq"
+          user_email: "dev@publiq.be"
