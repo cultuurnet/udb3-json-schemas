@@ -4,6 +4,22 @@ This repository contains all the API documentation hosted at https://docs.publiq
 
 The hosting is provided by https://stoplight.io, who provide a beautiful interface to browse them.
 
+## Table of contents
+
+- [Requirements](#requirements-)
+- [Getting started](#getting-started-)
+- [Contribution guidelines](#contribution-guidelines-)
+- [Adding a new project](#adding-a-new-project-)
+- [Project structure](#project-structure-)
+- [Opening your project in Stoplight Studio](#opening-your-project-in-stoplight-studio-)
+- [OpenAPI files](#openapi-files-)
+- [Docs](#docs-)
+- [Sidebar](#sidebar-)
+- [Images](#images-)
+- [Automatic checks](#automatic-checks-)
+- [Automatically fixing (some) errors](#automatically-fixing-some-errors-)
+- [Useful tools and resource](#useful-tools-and-resources-)
+
 ## Requirements 🐙
 
 To contribute to our API documentation, some basic knowledge of [git](https://git-scm.com/) is required so you can commit your changes to a temporary branch and get them reviewed before they get published.
