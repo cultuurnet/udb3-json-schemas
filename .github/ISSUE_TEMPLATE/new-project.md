@@ -40,6 +40,7 @@ assignees: bertramakers
 `#000000`
 
 - Pick a hex color code, which will determine the color of your project's name and icon in the sidebar
+- Preferably your product's brand color
 - For example `#00B08D`
 
 ---
